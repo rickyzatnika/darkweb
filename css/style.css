@@ -1,0 +1,195 @@
+@import url('../css/fonts.css');
+::selection {
+  color: rgb(70, 104, 99);
+}
+
+:root {
+
+  --Abel: 'Abel', cursive;
+  --Anton: 'Anton', cursive;
+  --Josefin: 'Josefin', cursive;
+  --Lexend: 'Lexend', cursive;
+  --Livvic: 'Livvic', cursive;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+* a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+#canvas1 {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+.content {
+  text-align: center;
+  
+}
+.content img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0; top: 0;
+  z-index: -999;
+  object-fit: cover;
+}
+
+.content img#image1 {
+  mix-blend-mode: multiply;
+}
+#time {
+  font-family: var(--Abel);
+  font-size: 10rem;
+  font-weight: bold;
+  color: transparent;
+  border: 2px solid rgba(121, 20, 20, 0.514);
+  box-shadow: inset 0 0 10rem rgb(0, 0, 0);
+  border-radius: 2rem;
+  padding: 1rem;
+  position: relative;
+  
+  text-shadow: 2px 2px 2px rgba(255, 252, 252, 0.836);
+  z-index: 4;
+}
+h1 {
+  margin-bottom: 1rem;
+  color: rgb(19, 18, 18);
+  font-family: var(--Livvic);
+  margin-top: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  z-index: 1;
+  text-shadow: 0 0 8px rgb(235, 45, 45);
+}
+h2 {
+  margin-bottom: .5rem;
+  color: rgb(185, 185, 185);
+  font-family: var(--Abel);
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  padding: 0 12%;
+  
+}
+.duabutton{
+  margin-top: 2rem;
+  display: inline-block;
+  transition: all .5s ease;
+}
+.button {
+  position: relative;
+  padding: .9rem .4rem;
+  border-radius: .3rem;
+  color: #adadad;
+  transition: .5s ease ;
+  font-weight: 500;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 3rem;
+  border: 2px solid rgb(99, 2, 2);
+  font-family: var(--Livvic);
+}
+.button:hover {
+  border: 2px solid rgb(75, 6, 6);
+  color: #727171;
+}
+.button .front {
+  display: inline-block;
+  position: relative;
+  color: rgb(99, 2, 2);
+  opacity: 1;
+  left: -1.1rem;  
+}
+.button:hover .front {
+  left: 1rem;
+  opacity: 0;
+}
+.button span {
+  position: relative;
+  display: inline-block;
+  transition: .5s ease ;
+  opacity: 0;
+  left: -.6rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.button:hover span {
+  left: .1rem;
+  opacity: 1;
+}
+
+footer {
+  position: relative;
+  margin-top: 7rem;
+  text-align: center;
+  align-items: center;
+  font-family: var(--Abel);
+}
+
+footer p {
+  color: rgb(172, 171, 171);
+  
+  font-size: 1.2rem;
+}
+footer small {
+  color: #aaa6a6;
+  font-size: 1rem;
+  font-family: var(--Livvic);
+}
+footer i {
+  color: rgb(102, 4, 4);
+  font-size: .8rem;
+}
+#focus {
+  letter-spacing: .1rem;
+  font-size: .9rem;
+  color: rgb(112, 111, 111);
+}
+
+@media(max-width: 700px){
+  html {
+    font-size: 65%;
+  }
+  #time {
+    font-size: 6rem;
+  }
+}
+
+@media(max-width: 400px){
+  html {
+    font-size: 60%;
+  }
+  
+}
+
+@media(max-width: 300px){
+  html {
+    font-size: 50%;
+  }
+  
+}
