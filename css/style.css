@@ -112,7 +112,7 @@ h2 {
   align-items: center;
   text-align: center;
   margin: 1rem auto;
-  border: 2px solid rgb(99, 2, 2);
+  
   font-family: var(--Livvic);
 }
 .button:hover {
